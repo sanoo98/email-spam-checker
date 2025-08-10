@@ -1,0 +1,22 @@
+{
+  "name": "email-spam-analyzer",
+  "version": "1.0.0",
+  "description": "Web application for email spam detection and cold email optimization",
+  "main": "server/index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "test": "cd server && npm test && cd ../client && npm test",
+    "start": "npm run dev"
+  },
+  "keywords": ["email", "spam", "detection", "cold-email", "optimization"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
